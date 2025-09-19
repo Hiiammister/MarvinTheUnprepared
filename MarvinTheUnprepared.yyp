@@ -35,6 +35,7 @@
   },
   "name":"MarvinTheUnprepared",
   "resources":[
+    {"id":{"name":"Obj_hello_world","path":"objects/Obj_hello_world/Obj_hello_world.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
