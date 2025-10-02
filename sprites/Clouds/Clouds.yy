@@ -12,13 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+<<<<<<< HEAD
     {"$GMSpriteFrame":"","%Name":"2c106299-1a54-4d07-959a-11d805252df8","name":"2c106299-1a54-4d07-959a-11d805252df8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+=======
+    {"$GMSpriteFrame":"","%Name":"9a4ee31d-43df-414e-8c3e-af0d92609c69","name":"9a4ee31d-43df-414e-8c3e-af0d92609c69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   ],
   "gridX":0,
   "gridY":0,
   "height":1500,
   "HTile":false,
   "layers":[
+<<<<<<< HEAD
     {"$GMImageLayer":"","%Name":"f76f5958-e31b-4a7d-b373-975a5fd8321e","blendMode":0,"displayName":"default","isLocked":false,"name":"f76f5958-e31b-4a7d-b373-975a5fd8321e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Clouds",
@@ -43,6 +48,13 @@
     "top":0,
   },
   "origin":4,
+=======
+    {"$GMImageLayer":"","%Name":"8d0689f5-f27c-4d60-92df-b74169932ead","blendMode":0,"displayName":"default","isLocked":false,"name":"8d0689f5-f27c-4d60-92df-b74169932ead","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+  ],
+  "name":"Clouds",
+  "nineSlice":null,
+  "origin":0,
+>>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -90,14 +102,24 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+<<<<<<< HEAD
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c106299-1a54-4d07-959a-11d805252df8","path":"sprites/Clouds/Clouds.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"05eb84aa-a4b0-44c9-aaea-07362a33f63a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9a4ee31d-43df-414e-8c3e-af0d92609c69","path":"sprites/Clouds/Clouds.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d219822f-365f-4c10-8b72-46b9820d6864","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< HEAD
     "xorigin":2880,
     "yorigin":750,
+=======
+    "xorigin":0,
+    "yorigin":0,
+>>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   },
   "swatchColours":null,
   "swfPrecision":0.5,
