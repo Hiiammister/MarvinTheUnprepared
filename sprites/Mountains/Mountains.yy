@@ -12,30 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-<<<<<<< HEAD
-    {"$GMSpriteFrame":"","%Name":"6d7439c0-6a61-4ca3-80c9-979ccb1b93c6","name":"6d7439c0-6a61-4ca3-80c9-979ccb1b93c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-=======
     {"$GMSpriteFrame":"","%Name":"32752261-a0a9-41c0-a592-f102a8d26feb","name":"32752261-a0a9-41c0-a592-f102a8d26feb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   ],
   "gridX":0,
   "gridY":0,
   "height":1500,
   "HTile":false,
   "layers":[
-<<<<<<< HEAD
-    {"$GMImageLayer":"","%Name":"2221cfa6-56e8-4e04-994e-6aa18f1f9a1c","blendMode":0,"displayName":"default","isLocked":false,"name":"2221cfa6-56e8-4e04-994e-6aa18f1f9a1c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-  ],
-  "name":"Mountains",
-  "nineSlice":null,
-  "origin":4,
-=======
     {"$GMImageLayer":"","%Name":"bfb4c3b5-901a-471c-acaf-edc07873647c","blendMode":0,"displayName":"default","isLocked":false,"name":"bfb4c3b5-901a-471c-acaf-edc07873647c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Mountains",
   "nineSlice":null,
   "origin":0,
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -83,24 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-<<<<<<< HEAD
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d7439c0-6a61-4ca3-80c9-979ccb1b93c6","path":"sprites/Mountains/Mountains.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"444752c5-3e96-488a-bc4b-b3f272146d76","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-=======
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"32752261-a0a9-41c0-a592-f102a8d26feb","path":"sprites/Mountains/Mountains.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"719fd02e-16f1-46b7-9c5d-311af0330592","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-<<<<<<< HEAD
-    "xorigin":2880,
-    "yorigin":750,
-=======
     "xorigin":0,
     "yorigin":0,
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   },
   "swatchColours":null,
   "swfPrecision":0.5,

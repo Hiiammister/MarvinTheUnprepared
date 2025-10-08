@@ -12,30 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-<<<<<<< HEAD
-    {"$GMSpriteFrame":"","%Name":"eda63322-3dcc-458e-abd7-3efc3d876849","name":"eda63322-3dcc-458e-abd7-3efc3d876849","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-=======
     {"$GMSpriteFrame":"","%Name":"3e2b710a-372b-4109-b9c3-190ed93ec984","name":"3e2b710a-372b-4109-b9c3-190ed93ec984","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   ],
   "gridX":0,
   "gridY":0,
   "height":1500,
   "HTile":false,
   "layers":[
-<<<<<<< HEAD
-    {"$GMImageLayer":"","%Name":"b79388f8-d3b2-417a-a56b-e51cf8d4b389","blendMode":0,"displayName":"default","isLocked":false,"name":"b79388f8-d3b2-417a-a56b-e51cf8d4b389","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-  ],
-  "name":"Desert",
-  "nineSlice":null,
-  "origin":4,
-=======
     {"$GMImageLayer":"","%Name":"a08f5d21-da94-4a12-8010-21107d2933ff","blendMode":0,"displayName":"default","isLocked":false,"name":"a08f5d21-da94-4a12-8010-21107d2933ff","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Desert",
   "nineSlice":null,
   "origin":0,
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -83,24 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-<<<<<<< HEAD
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eda63322-3dcc-458e-abd7-3efc3d876849","path":"sprites/Desert/Desert.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"22c18e66-8aef-4e08-a7b2-6fb6d9bf5c2d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-=======
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3e2b710a-372b-4109-b9c3-190ed93ec984","path":"sprites/Desert/Desert.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"406cf21f-4ee0-4b89-9eee-5d3ad90ff592","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-<<<<<<< HEAD
-    "xorigin":2880,
-    "yorigin":750,
-=======
     "xorigin":0,
     "yorigin":0,
->>>>>>> 6a84ac7b8b1e8e7f9f0711fc5235b66f6e795981
   },
   "swatchColours":null,
   "swfPrecision":0.5,
