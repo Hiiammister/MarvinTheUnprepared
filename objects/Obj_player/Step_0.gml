@@ -16,12 +16,13 @@ if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, Obj_block)){
 }
 if moving{
 	sprite_index=Sprite6;
-	image_speed=0.1;
-	image_index=0;
+	image_speed=0.2;
+	
 }
 else{
 	sprite_index=Sprite7;
-	image_speed=0.2;
+	image_speed=0.1;
+
 }
 if keyboard_check(vk_up){
 	if instance_place(x,y+1,Obj_block){
