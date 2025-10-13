@@ -91,6 +91,7 @@ if (keyboard_check_pressed(ord("X")) && !attacking && on_ground) {
     sprite_index = spr_marvin_attack;
     image_speed = 1;
     image_index = 0;
+	
 }
 
 // End attack when animation finishes
