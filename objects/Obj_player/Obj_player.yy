@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_player",
+  "%Name":"obj_player",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_block","path":"objects/Obj_block/Obj_block.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_player",
+  "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,13 +27,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"jump_height","filters":[],"listItems":[],"multiselect":false,"name":"jump_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-8","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"Walk_Marvin_Sheet",
-    "path":"sprites/Walk_Marvin_Sheet/Walk_Marvin_Sheet.yy",
+    "name":"spr_marvin_walk",
+    "path":"sprites/spr_marvin_walk/spr_marvin_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

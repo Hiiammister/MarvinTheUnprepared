@@ -1,30 +1,27 @@
-// Movement and animation logic
-var move_speed = 4;
-var jump_height = -8;
-var on_ground = place_meeting(x, y + 1, Obj_block);
+var on_ground = place_meeting(x, y + 1, obj_block);
 var moving = false;
 
 // Horizontal movement
-if (keyboard_check(vk_left) && !place_meeting(x - move_speed, y, Obj_block)) {
-    image_xscale = -1;
+if (keyboard_check(vk_left) && !place_meeting(x - move_speed, y, obj_block)) {
+    if (image_xscale > 0) image_xscale *= -1; // flip if currently facing right
     x -= move_speed;
     moving = true;
 }
-if (keyboard_check(vk_right) && !place_meeting(x + move_speed, y, Obj_block)) {
-    image_xscale = 1;
+if (keyboard_check(vk_right) && !place_meeting(x + move_speed, y, obj_block)) {
+    if (image_xscale < 0) image_xscale *= -1; // flip if currently facing left
     x += move_speed;
     moving = true;
 }
 
 // Sprite/animation handling
 if (moving && on_ground) {
-    sprite_index = Walk_Marvin_Sheet;
+    sprite_index = spr_marvin_walk;
     image_speed = 0.2;
 } else if (on_ground) {
-    sprite_index = Walk_Marvin_Sheet;
+    sprite_index = spr_marvin_idle;
     image_speed = 0.1;
 } else {
-    sprite_index = Walk_Marvin_Sheet; // Add a jump sprite for the air
+    sprite_index = spr_marvin_walk; // Add a jump sprite for the air
     image_speed = 0.1;
 }
 
@@ -40,6 +37,3 @@ if (on_ground) {
 } else {
     gravity = 0.25;
 }
-
-// Optional: Custom Draw Event (add this to ensure sprite draws correctly)
-// draw_self();

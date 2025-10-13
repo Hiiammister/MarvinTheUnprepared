@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_block",
+  "%Name":"obj_block",
   "eventList":[],
   "managed":true,
-  "name":"Obj_block",
+  "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite5",
-    "path":"sprites/Sprite5/Sprite5.yy",
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
   "visible":true,
