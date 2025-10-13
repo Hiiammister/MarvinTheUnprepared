@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_button_level_2",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_button_level_2",
   "overriddenProperties":[
@@ -37,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button",
-    "path":"sprites/spr_button/spr_button.yy",
+    "name":"spr_ui_button",
+    "path":"sprites/spr_ui_button/spr_ui_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
