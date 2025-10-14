@@ -14,20 +14,23 @@ if (player != noone) {
     }
 
     // --- Face player ---
-    if (player.x < x) image_xscale = 1;
-    else image_xscale = -1;
+    if (player.x < x) { 
+		if (image_xscale < 0) image_xscale *= -1;
+	} else { 
+		if (image_xscale > 0) image_xscale *= -1;
+	}
 }
 
 // --- Behavior ---
 switch (state) {
     case "idle":
         sprite_index = spr_enemy_idle;
-        image_speed = 0.2;
+        //image_speed = 0.2;
         break;
 
     case "attack":
         sprite_index = spr_enemy_shoot;
-        image_speed = 0.3;
+        //image_speed = 0.3;
 
         // Shooting cooldown
         if (attack_cooldown > 0) attack_cooldown--;
