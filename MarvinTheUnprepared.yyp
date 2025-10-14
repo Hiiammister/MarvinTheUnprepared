@@ -60,7 +60,6 @@
     {"id":{"name":"rm_levels","path":"rooms/rm_levels/rm_levels.yy",},},
     {"id":{"name":"rm_title_1","path":"rooms/rm_title_1/rm_title_1.yy",},},
     {"id":{"name":"rm_title_2","path":"rooms/rm_title_2/rm_title_2.yy",},},
-    {"id":{"name":"shd_player","path":"shaders/shd_player/shd_player.yy",},},
     {"id":{"name":"bullet","path":"sprites/bullet/bullet.yy",},},
     {"id":{"name":"Platform_Tiles","path":"sprites/Platform_Tiles/Platform_Tiles.yy",},},
     {"id":{"name":"spr_bg_cloud","path":"sprites/spr_bg_cloud/spr_bg_cloud.yy",},},

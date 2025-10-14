@@ -8,7 +8,3 @@ dash_cooldown = 60; // frames (~1 sec)
 dash_speed = 20;
 vspeed = 0;
 attacking = false;
-time = 0;
-wave_frequency = 10; // match the shader's horizontal frequency
-wave_amplitude = 4;  // pixels to move the collision mask
-mask_y = y;

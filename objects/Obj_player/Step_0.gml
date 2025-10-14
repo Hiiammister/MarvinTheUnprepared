@@ -129,11 +129,3 @@ if (!attacking) {
 if (y > room_height + 100) {
     show_debug_message("remove health");
 }
- 
-// Animating the sprite using shaders
-time += delta_time / 1000.0;
-
-// --- OSCILLATING HITBOX BASED ON SHADER WAVE ---
-var wave_offset = sin(x * 10 + time * 3) * 4; // frequency = 10, amplitude = 4
-mask_y = y; // move the collision mask with the wave
-
