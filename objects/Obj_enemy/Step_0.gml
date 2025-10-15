@@ -36,7 +36,7 @@ switch (state) {
         if (attack_cooldown > 0) attack_cooldown--;
         else {
             // Shoot bullet toward player
-            var enemy_bullet = instance_create_layer(x, y, "instances", Obj_enemy_bullet);
+            var enemy_bullet = instance_create_layer(x, y, "instances", obj_enemy_bullet);
             bullet.direction = point_direction(x, y, player.x, player.y);
             bullet.speed = 6;
 

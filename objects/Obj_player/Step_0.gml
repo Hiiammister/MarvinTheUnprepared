@@ -3,13 +3,14 @@ var on_ground = place_meeting(x, y + 1, obj_block);
 var gravity_force = 0.25;
 var moving = false;
 
+
 // --- SPEED + STAMINA ---
 var base_speed = 4;
 var sprint_speed = 6;
 var stamina_drain = 0.5;
 var stamina_regen = 0.3;
 
-if (!attacking) {
+if (!attacking && !crouching) {
 	
 	// --- SPRINTING ---
 	var current_speed = base_speed;
@@ -43,20 +44,7 @@ if (!attacking) {
 	        can_double_jump = false;
 	    }
 	}
-	
-	// --- CROUCH / FAST FALL ---
-	if (keyboard_check(vk_down)) {
-		if (on_ground && !moving) {
-		    sprite_index = spr_marvin_crouch;
-			image_index = 0;
-		    image_speed = 1;
-			if (image_index >= image_number - 1) image_index = image_number - 1; 
-		} else {
-		    vspeed += gravity_force * 1.5; // fast fall
-		}
-	}
-	
-	
+
 	// --- DASH ---
 	if (dash_timer > 0) dash_timer -= 1;
 
@@ -78,11 +66,32 @@ y += vspeed;
 // --- COLLISION FIX ---
 if (place_meeting(x, y+base_speed -1 , obj_block) || place_meeting(x, y-base_speed+1, obj_block)) {
     if (vspeed > 0) {
-        while (!place_meeting(x, y + 1, obj_block)) y += 1;
+        while (!place_meeting(x, y + 1, obj_block)) y += .1;
     } else if (vspeed < 0) {
-        while (!place_meeting(x, y - 1, obj_block)) y -= 1;
+        while (!place_meeting(x, y - 1, obj_block)) y -= .1;
     }
     vspeed = 0;
+}
+
+
+// --- CROUCH / FAST FALL ---
+if (keyboard_check(vk_down)) {
+	if (on_ground && !moving && !crouching) {
+		show_debug_message("Crouch!");
+		crouching = true;
+		image_index = 0;
+	} else {
+		vspeed += gravity_force * 1.5; // fast fall
+	}
+}
+	
+if (crouching && on_ground) {
+	if (!keyboard_check(vk_down)) {
+		if (image_index >= image_number - 1) { 
+			crouching = false;
+			show_debug_message("Crouch Finished!");
+		}	 
+	}
 }
 
 // --- ATTACK ---
@@ -119,13 +128,20 @@ if (!attacking) {
     } else if (moving) {
         sprite_index = spr_marvin_walk;
         image_speed = 1;
+	} else if (crouching) { 
+		sprite_index = spr_marvin_crouch;
+		 image_speed = 1;
+		if (image_index >= image_number - 1) image_index = image_number - 1; 
     } else {
         sprite_index = spr_marvin_idle;
         image_speed = 1;
     }
-}
+} 
 
 // Feel off room
 if (y > room_height + 100) {
-    show_debug_message("remove health");
+	// remove health and restart level	
+	health -= 1;
+	instance_deactivate_object(self)
+	room_restart()
 }
