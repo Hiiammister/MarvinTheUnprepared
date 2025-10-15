@@ -70,6 +70,7 @@
     {"id":{"name":"su_music_plus_enviro_combo","path":"sounds/su_music_plus_enviro_combo/su_music_plus_enviro_combo.yy",},},
     {"id":{"name":"su_theme_music","path":"sounds/su_theme_music/su_theme_music.yy",},},
     {"id":{"name":"su_ui_click","path":"sounds/su_ui_click/su_ui_click.yy",},},
+    {"id":{"name":"shd_button","path":"shaders/shd_button/shd_button.yy",},},
     {"id":{"name":"bullet","path":"sprites/bullet/bullet.yy",},},
     {"id":{"name":"Platform_Tiles","path":"sprites/Platform_Tiles/Platform_Tiles.yy",},},
     {"id":{"name":"spr_bg_cloud","path":"sprites/spr_bg_cloud/spr_bg_cloud.yy",},},
