@@ -68,6 +68,7 @@
     {"id":{"name":"rm_title_1","path":"rooms/rm_title_1/rm_title_1.yy",},},
     {"id":{"name":"rm_title_2","path":"rooms/rm_title_2/rm_title_2.yy",},},
     {"id":{"name":"shd_button","path":"shaders/shd_button/shd_button.yy",},},
+    {"id":{"name":"shd_flash","path":"shaders/shd_flash/shd_flash.yy",},},
     {"id":{"name":"su_enemy_shoot","path":"sounds/su_enemy_shoot/su_enemy_shoot.yy",},},
     {"id":{"name":"su_marvin_enviro","path":"sounds/su_marvin_enviro/su_marvin_enviro.yy",},},
     {"id":{"name":"su_marvin_footsteps","path":"sounds/su_marvin_footsteps/su_marvin_footsteps.yy",},},

@@ -15,8 +15,9 @@ if (keyboard_check_pressed(ord("X"))) {
     other.health -= 1;
 
     // Flash red for a few frames
-    other.image_blend = c_red;
+	other.image_blend = c_red;
     other.alarm[0] = 5;
+    other.flash_strength = 1.0;
 
     // Knockback enemy slightly
     other.x += other.x < x ? -other.knockback : other.knockback;
@@ -25,5 +26,23 @@ if (keyboard_check_pressed(ord("X"))) {
     if (other.health <= 0) {
         instance_destroy(other);
     }
+}
+
+// --- Player jumps on enemy (stomp attack) ---
+if (vspeed > 0 && bbox_bottom <= other.bbox_top + 5) {
+    other.health -= 1;
+    other.flash_strength = 1.0; // flash on stomp
+    vspeed = -6; // bounce upward slightly
+
+    if (other.health <= 0) {
+        instance_destroy();
+    }
+}
+
+// --- Enemy damages player (if player isn't attacking) ---
+if (!keyboard_check_pressed(ord("X")) && vspeed <= 0) {
+    health -= 1;
+    flash_strength = 1.0; // flash red on player
+    show_debug_message("Player hit!");
 }
 

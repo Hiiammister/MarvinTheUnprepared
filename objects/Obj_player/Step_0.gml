@@ -161,3 +161,7 @@ if (y > room_height + 100) {
 	instance_deactivate_object(self)
 	room_restart()
 }
+
+if (flash_strength > 0) {
+    flash_strength = max(0, flash_strength - 0.2);
+}
