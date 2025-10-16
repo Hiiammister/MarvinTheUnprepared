@@ -13,3 +13,5 @@ dash_speed = 100;
 attacking = false;
 crouching = false;
 
+// --- Flash effect setup ---
+flash_strength = 0; // 0 = normal, 1 = fully red
