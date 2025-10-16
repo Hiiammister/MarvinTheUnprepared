@@ -1,9 +1,11 @@
-gravity_direction=270;
-health = 5;
+global.gravity_direction=270;
+global.health = 5;
+global.max_health = 5;
+global.stamina = 100;
+global.max_stamina = 100;
+
 vspeed = 0;
 
-stamina = 100;
-max_stamina = 100;
 can_double_jump = true;
 dash_timer = 0;
 dash_cooldown = 60; // frames (~1 sec)

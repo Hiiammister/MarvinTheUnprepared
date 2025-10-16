@@ -17,7 +17,7 @@ if (!attacking && !crouching) {
 	    current_speed = sprint_speed;
 	    stamina -= stamina_drain;
 	} else {
-	    stamina = clamp(stamina + stamina_regen, 0, max_stamina);
+	    stamina = clamp(stamina + stamina_regen, 0, global.max_stamina);
 	}
 
 

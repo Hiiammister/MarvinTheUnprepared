@@ -37,7 +37,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_marvin_walk",
     "path":"sprites/spr_marvin_walk/spr_marvin_walk.yy",
