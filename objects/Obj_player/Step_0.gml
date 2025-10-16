@@ -5,8 +5,7 @@ var moving = false;
 
 
 // --- SPEED + STAMINA ---
-var base_speed = 4;
-var sprint_speed = 6;
+var sprint_speed = base_speed + 5;
 var stamina_drain = 0.5;
 var stamina_regen = 0.3;
 
@@ -34,6 +33,21 @@ if (!attacking && !crouching) {
 	    moving = true;
 	}
 	
+	// --- FOOTSTEP SOUND CONTROL ---
+	if (on_ground && moving) {
+	    // If sound isn't already playing, start it
+	    if (!audio_is_playing(su_marvin_footsteps)) {
+	        var snd = audio_play_sound(su_marvin_footsteps, 1, true);
+			audio_sound_pitch(snd, 1.4);
+	    }
+	} else {
+	    // Stop footsteps when not moving on the ground
+	    if (audio_is_playing(su_marvin_footsteps)) {
+	        audio_stop_sound(su_marvin_footsteps);
+	    }
+	}
+	
+	
 	// --- JUMP & DOUBLE JUMP ---
 	if (keyboard_check_pressed(vk_up)) {
 	    if (on_ground) {
@@ -43,6 +57,8 @@ if (!attacking && !crouching) {
 	        vspeed = -jump_height * 0.9;
 	        can_double_jump = false;
 	    }
+		
+		audio_play_sound(su_marvin_jump, 0, false);
 	}
 
 	// --- DASH ---

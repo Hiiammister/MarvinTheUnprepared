@@ -35,7 +35,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"level_count","filters":[],"listItems":[],"multiselect":false,"name":"level_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"level_room_name","filters":[],"listItems":[],"multiselect":false,"name":"level_room_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_level_3","path":"rooms/rm_level_3/rm_level_3.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_level_3","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"level_room_name","filters":[],"listItems":[],"multiselect":false,"name":"level_room_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_level_3","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
