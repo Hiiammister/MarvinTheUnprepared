@@ -53,9 +53,11 @@ if (!attacking && !crouching) {
 	    if (on_ground) {
 	        vspeed = -jump_height;
 	        can_double_jump = true;
+			part_particles_create(global.p_sys, x, y + sprite_height / 2, p_type_jump_flash, 8);
 	    } else if (can_double_jump) {
 	        vspeed = -jump_height * 0.9;
 	        can_double_jump = false;
+			part_particles_create(global.p_sys, x, y, p_type_jump_flash, 15);
 	    }
 		
 		audio_play_sound(su_marvin_jump, 0, false);

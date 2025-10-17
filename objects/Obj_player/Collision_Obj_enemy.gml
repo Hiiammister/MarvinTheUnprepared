@@ -24,18 +24,27 @@ if (keyboard_check_pressed(ord("X"))) {
 
     // Destroy enemy if health <= 0
     if (other.health <= 0) {
+        if (global.p_sys > -1) {
+        part_particles_create(global.p_sys, other.x, other.y, other.p_type_explosion, 15);
+       }
         instance_destroy(other);
     }
 }
 
 // --- Player jumps on enemy (stomp attack) ---
 if (vspeed > 0 && bbox_bottom <= other.bbox_top + 5) {
+	if (!variable_instance_exists(other, "health")) {
+        other.health = 3;
+    }
     other.health -= 1;
     other.flash_strength = 1.0; // flash on stomp
     vspeed = -6; // bounce upward slightly
 
     if (other.health <= 0) {
-        instance_destroy();
+		if (global.p_sys > -1) {
+            part_particles_create(global.p_sys, other.x, other.y, other.p_type_explosion, 15);
+        }
+        instance_destroy(other);
     }
 }
 
