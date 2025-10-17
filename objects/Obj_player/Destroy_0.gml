@@ -1,3 +1,7 @@
+// PARTICLE SYSTEM CLEANUP
+part_system_destroy(global.p_sys);
+part_type_destroy(p_type_jump_flash);
+
 // Decrease the global lives count
 lives -= 1;
 

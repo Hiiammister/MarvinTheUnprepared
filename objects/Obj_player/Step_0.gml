@@ -5,20 +5,19 @@ var moving = false;
 
 
 // --- SPEED + STAMINA ---
-var base_speed = 4;
-var sprint_speed = 6;
-var stamina_drain = 0.5;
-var stamina_regen = 0.3;
+var sprint_speed = base_speed + 5;
+var stamina_drain = 0.1;
+var stamina_regen = 0.2;
 
 if (!attacking && !crouching) {
 	
 	// --- SPRINTING ---
 	var current_speed = base_speed;
-	if (keyboard_check(vk_shift) && stamina > 0) {
+	if (keyboard_check(vk_shift) && global.stamina  > 0) {
 	    current_speed = sprint_speed;
-	    stamina -= stamina_drain;
+	    global.stamina -= stamina_drain;
 	} else {
-	    stamina = clamp(stamina + stamina_regen, 0, max_stamina);
+	    global.stamina = clamp(global.stamina + stamina_regen, 0, global.max_stamina);
 	}
 
 
@@ -34,15 +33,34 @@ if (!attacking && !crouching) {
 	    moving = true;
 	}
 	
+	// --- FOOTSTEP SOUND CONTROL ---
+	if (on_ground && moving) {
+	    // If sound isn't already playing, start it
+	    if (!audio_is_playing(su_marvin_footsteps)) {
+	        var snd = audio_play_sound(su_marvin_footsteps, 1, true);
+			audio_sound_pitch(snd, 1.4);
+	    }
+	} else {
+	    // Stop footsteps when not moving on the ground
+	    if (audio_is_playing(su_marvin_footsteps)) {
+	        audio_stop_sound(su_marvin_footsteps);
+	    }
+	}
+	
+	
 	// --- JUMP & DOUBLE JUMP ---
 	if (keyboard_check_pressed(vk_up)) {
 	    if (on_ground) {
 	        vspeed = -jump_height;
 	        can_double_jump = true;
+			part_particles_create(global.p_sys, x, y + sprite_height / 2, p_type_jump_flash, 8);
 	    } else if (can_double_jump) {
 	        vspeed = -jump_height * 0.9;
 	        can_double_jump = false;
+			part_particles_create(global.p_sys, x, y, p_type_jump_flash, 15);
 	    }
+		
+		audio_play_sound(su_marvin_jump, 0, false);
 	}
 
 	// --- DASH ---
@@ -144,4 +162,8 @@ if (y > room_height + 100) {
 	health -= 1;
 	instance_deactivate_object(self)
 	room_restart()
+}
+
+if (flash_strength > 0) {
+    flash_strength = max(0, flash_strength - 0.2);
 }

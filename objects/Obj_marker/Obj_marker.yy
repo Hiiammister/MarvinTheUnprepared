@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_marker",
+  "%Name":"obj_marker",
   "eventList":[],
   "managed":true,
-  "name":"Obj_marker",
+  "name":"obj_marker",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite31",
-    "path":"sprites/Sprite31/Sprite31.yy",
+    "name":"spr_block_point",
+    "path":"sprites/spr_block_point/spr_block_point.yy",
   },
   "spriteMaskId":null,
   "visible":false,
