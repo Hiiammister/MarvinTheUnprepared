@@ -1,2 +1,4 @@
-hspeed=hspeed*-1;
-image_xscale=image_xscale*-1;
+// Marker Collision Event for Enemy
+hspeed = -hspeed;       // reverse direction when reaching marker
+// If you need visual flip:
+image_xscale = -image_xscale;

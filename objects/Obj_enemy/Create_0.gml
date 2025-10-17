@@ -5,7 +5,9 @@ attack_range=15;
 attack_rate=60;
 attack_cooldown=0;
 /// Enemy Create Event
-range = 250; // Distance to detect player
+range = 100; // Distance to detect player
  // Frames between bullets (~0.66 sec at 60 fps)
-
-state = "idle"; // idle / attack
+shoot_cooldown=0;
+player_close=false;
+move_dir=false;
+pre_hpseed = hspeed;
