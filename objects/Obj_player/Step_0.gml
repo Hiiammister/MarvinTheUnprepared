@@ -6,18 +6,18 @@ var moving = false;
 
 // --- SPEED + STAMINA ---
 var sprint_speed = base_speed + 5;
-var stamina_drain = 0.5;
-var stamina_regen = 0.3;
+var stamina_drain = 0.1;
+var stamina_regen = 0.2;
 
 if (!attacking && !crouching) {
 	
 	// --- SPRINTING ---
 	var current_speed = base_speed;
-	if (keyboard_check(vk_shift) && stamina > 0) {
+	if (keyboard_check(vk_shift) && global.stamina  > 0) {
 	    current_speed = sprint_speed;
-	    stamina -= stamina_drain;
+	    global.stamina -= stamina_drain;
 	} else {
-	    stamina = clamp(stamina + stamina_regen, 0, global.max_stamina);
+	    global.stamina = clamp(global.stamina + stamina_regen, 0, global.max_stamina);
 	}
 
 

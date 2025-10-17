@@ -1,8 +1,9 @@
 global.gravity_direction=270;
 global.health = 5;
 global.max_health = 5;
-global.stamina = 100;
-global.max_stamina = 100;
+global.stamina = 5;
+global.max_stamina = 5;
+global.shards = 0;
 
 vspeed = 0;
 

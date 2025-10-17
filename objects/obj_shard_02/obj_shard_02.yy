@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_marker",
+  "%Name":"obj_shard_02",
   "eventList":[],
   "managed":true,
-  "name":"obj_marker",
+  "name":"obj_shard_02",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shard_parent",
+    "path":"objects/obj_shard_parent/obj_shard_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block_point",
-    "path":"sprites/spr_block_point/spr_block_point.yy",
+    "name":"spr_shard_2",
+    "path":"sprites/spr_shard_2/spr_shard_2.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
