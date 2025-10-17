@@ -6,7 +6,7 @@
   "name":"obj_button_level_2",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_level_3","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"propertyId":{"name":"level_room_name","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"resource":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_level_2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_level_3","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"propertyId":{"name":"level_room_name","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_level_2",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_level_3","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"propertyId":{"name":"level_count","path":"objects/obj_button_level_3/obj_button_level_3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
   ],
   "parent":{
